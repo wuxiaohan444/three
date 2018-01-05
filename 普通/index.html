@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <select name="" id="one" title="">
+
+    </select>
+    <select name="" id="two" title="">
+        <option value="">请选择</option>
+    </select>
+    <select name="" id="three" title="">
+        <option value="">请选择</option>
+    </select>
+</div>
+<script type="text/html" id="tpl">
+    <option value="">请选择</option>
+    <%for( i = 0; i < data.length; i++) {%>
+    <option data-id="{{data[i].id}}" class="first">{{data[i].name}}</option>
+    <%}%>
+</script>
+<script type="text/html" id="tpl2">
+    <option value="">请选择</option>
+    <%for( i = 0; i < data.city.length; i++) {%>
+    <option>{{data.city[i].name}}</option>
+    <%}%>
+</script>
+<script type="text/html" id="tpl3">
+    <option value="">请选择</option>
+    <%for( i = 0; i < Arry.length; i++) {%>
+    <option>{{Arry[i].name}}</option>
+    <%}%>
+</script>
+<script></script>
+<script src="template-web.js/"></script>
+<script src="data.js"></script>
+<script  src="index.js"></script>
+</body>
+</html>
